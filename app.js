@@ -62,14 +62,14 @@ const speakers = [
   },
 ];
 function spks() {
-    if (window.innerWidth <= 768) {
-      let click = false;
-      document.getElementById('spks-container').innerHTML = '';
-      for (let i = 0; i < speakers.length; i += 1) {
-        if (i < 2) {
-          document.getElementById(
-            'spks-container',
-          ).innerHTML += `<article class="speaker-details">
+  if (window.innerWidth <= 768) {
+    let click = false;
+    document.getElementById('spks-container').innerHTML = '';
+    for (let i = 0; i < speakers.length; i += 1) {
+      if (i < 2) {
+        document.getElementById(
+          'spks-container',
+        ).innerHTML += `<article class="speaker-details">
               <div class="thumbnail">
                 <img class="spk-bck1" src="${speakers[i].image}" alt="${speakers[i].image_alt}" />
                  <img class="spk-bck" src="${speakers[i].image1}" alt="${speakers[i].image1_alt}"/>
@@ -87,15 +87,15 @@ function spks() {
                 </div>
               </div>
             </article>`;
-        }
       }
-      document.getElementById('more-button').addEventListener('click', () => {
-        document.getElementById('spks-container').innerHTML = '';
-        if (click === false) {
-          for (let i = 0; i < speakers.length; i += 1) {
-            document.getElementById(
-              'spks-container',
-            ).innerHTML += `<article class="speaker-details">
+    }
+    document.getElementById('more-button').addEventListener('click', () => {
+      document.getElementById('spks-container').innerHTML = '';
+      if (click === false) {
+        for (let i = 0; i < speakers.length; i += 1) {
+          document.getElementById(
+            'spks-container',
+          ).innerHTML += `<article class="speaker-details">
               <div class="thumbnail">
                 <img class="spk-bck1" src="${speakers[i].image}" alt="${speakers[i].image_alt}" />
                  <img class="spk-bck" src="${speakers[i].image1}" alt="${speakers[i].image1_alt}"/>
