@@ -1,174 +1,72 @@
-const navMobile = document.getElementById('navmobile');
-// const navbar = document.getElementById("navbar")
-function openMobileMenu() {
-  navMobile.style.display = 'block';
-}
+const speakersName = document.querySelectorAll('.speakers-name');
+const speakersCountry = document.querySelectorAll('.speakers-country');
+const speakersDescription = document.querySelectorAll('.speakers-description');
+const speakersBgImage = document.querySelectorAll('.img-transparent-bkgrnd');
+const speakersImage = document.querySelectorAll('.speakers-images');
 
-function closeMobileMenu() {
-  navMobile.style.display = 'none';
-}
-
-openMobileMenu();
-closeMobileMenu();
-
-const speakers = [
+const speakersInfo = [
   {
+    name: 'John Duke',
+    country: 'Somerset, England',
+    description: 'John, chair of the institution',
+    bgImage: 'image/speaker-back.png',
     image: 'image/speaker1.jpg',
-    image_alt: 'first speaker',
-    image1: './image/speaker-back.png',
-    image1_alt: 'speaker checker',
-    name: 'Stephanie Walter',
-    rank: '1',
   },
   {
-    image: 'image/speaker2.jpg',
-    image_alt: 'first speaker',
-    image1: './image/speaker-back.png',
-    image1_alt: 'speaker checker',
-    name: 'Atila Fassina',
-    rank: '2',
-  },
-  {
-    image: 'image/speaker3.jpg',
-    image_alt: 'first speaker',
-    image1: './image/speaker-back.png',
-    image1_alt: 'speaker checker',
-    name: 'Brad Frost',
-    rank: '3',
-  },
-  {
-    image: 'image/speaker4.jpg',
-    image_alt: 'first speaker',
-    image1: './image/speaker-back.png',
-    image1_alt: 'speaker checker',
-    name: 'Elliot Jay Stocks',
-    rank: '4',
-  },
-  {
+    name: 'Babar Azam',
+    country: 'Nairobi, Kenya',
+    description: 'Babar azam is believed to introduce javascript',
+    bgImage: 'image/speaker-back.png',
     image: 'image/speaker5.jpg',
-    image_alt: 'first speaker',
-    image1: './image/speaker-back.png',
-    image1_alt: 'speaker checker',
-    name: 'Vitaly Friedman',
-    rank: '5',
   },
   {
-    image: 'image/speaker6.jpg',
-    image_alt: 'first speaker',
-    image1: './image/speaker-back.png',
-    image1_alt: 'speaker checker',
-    name: 'Remi Parmentier',
-    rank: '6',
+    name: 'Babar Azam',
+    country: 'Nairobi, Kenya',
+    description: 'Babar azam is believed to introduce javascript',
+    bgImage: 'image/speaker-back.png',
+    image: 'image/speaker5.jpg',
+  },
+  {
+    name: 'Babar Azam',
+    country: 'Nairobi, Kenya',
+    description: 'Babar azam is believed to introduce javascript',
+    bgImage: 'image/speaker-back.png',
+    image: 'image/speaker5.jpg',
+  },
+  {
+    name: 'Babar Azam',
+    country: 'Nairobi, Kenya',
+    description: 'Babar azam is believed to introduce javascript',
+    bgImage: 'image/speaker-back.png',
+    image: 'image/speaker5.jpg',
+  },
+  {
+    name: 'Babar Azam',
+    country: 'Nairobi, Kenya',
+    description: 'Babar azam is believed to introduce javascript',
+    bgImage: 'image/speaker-back.png',
+    image: 'image/speaker5.jpg',
   },
 ];
-function spks() {
-  if (window.innerWidth <= 768) {
-    let click = false;
-    document.getElementById('spks-container').innerHTML = '';
-    for (let i = 0; i < speakers.length; i += 1) {
-      if (i < 2) {
-        document.getElementById(
-          'spks-container',
-        ).innerHTML += `<article class="speaker-details">
-              <div class="thumbnail">
-                <img class="spk-bck1" src="${speakers[i].image}" alt="${speakers[i].image_alt}" />
-                 <img class="spk-bck" src="${speakers[i].image1}" alt="${speakers[i].image1_alt}"/>
-              </div>
-              <div class="speakinfo">
-                <div class="name">
-                  <h4>${speakers[i].name}</h4>
-                </div>
-                <div class="position">
-                  <p class="sub-position">${speakers[i].position}</p>
-                </div>
-                <hr class="slin">
-                <div class="company">
-                  <p>${speakers[i].company}</p>
-                </div>
-              </div>
-            </article>`;
-      }
-    }
-    document.getElementById('more-button').addEventListener('click', () => {
-      document.getElementById('spks-container').innerHTML = '';
-      if (click === false) {
-        for (let i = 0; i < speakers.length; i += 1) {
-          document.getElementById(
-            'spks-container',
-          ).innerHTML += `<article class="speaker-details">
-              <div class="thumbnail">
-                <img class="spk-bck1" src="${speakers[i].image}" alt="${speakers[i].image_alt}" />
-                 <img class="spk-bck" src="${speakers[i].image1}" alt="${speakers[i].image1_alt}"/>
-              </div>
-              <div class="speakinfo">
-                <div class="name">
-                  <h4>${speakers[i].name}</h4>
-                </div>
-                <div class="position">
-                  <p class="sub-position">${speakers[i].position}</p>
-                </div>
-                <hr class="slin">
-                <div class="company">
-                  <p>${speakers[i].company}</p>
-                </div>
-              </div>
-            </article>`;
-        }
-        click = true;
-      } else {
-        document.getElementById('spks-container').innerHTML = '';
-        for (let i = 0; i < speakers.length; i += 1) {
-          if (i < 2) {
-            document.getElementById(
-              'spks-container',
-            ).innerHTML += `<article class="speaker-details">
-            <div class="thumbnail">
-              <img class="spk-bck1" src="${speakers[i].image}" alt="${speakers[i].image_alt}" />
-               <img class="spk-bck" src="${speakers[i].image1}" alt="${speakers[i].image1_alt}"/>
-            </div>
-            <div class="speakinfo">
-              <div class="name">
-                <h4>${speakers[i].name}</h4>
-              </div>
-              <div class="position">
-                <p class="sub-position">${speakers[i].position}</p>
-              </div>
-              <hr class="slin">
-              <div class="company">
-                <p>${speakers[i].company}</p>
-              </div>
-            </div>
-          </article>`;
-          }
-        }
-        click = false;
-      }
-    });
-  } else {
-    document.getElementById('spks-container').innerHTML = '';
-    for (let i = 0; i < speakers.length; i += 1) {
-      document.getElementById(
-        'spks-container',
-      ).innerHTML += `<article class="speaker-details">
-            <div class="thumbnail">
-              <img class="spk-bck1" src="${speakers[i].image}" alt="${speakers[i].image_alt}" />
-               <img class="spk-bck" src="${speakers[i].image1}" alt="${speakers[i].image1_alt}"/>
-            </div>
-            <div class="speakinfo">
-              <div class="name">
-                <h4>${speakers[i].name}</h4>
-              </div>
-              <div class="position">
-                <p class="sub-position">${speakers[i].position}</p>
-              </div>
-              <hr class="slin">
-              <div class="company">
-                <p>${speakers[i].company}</p>
-              </div>
-            </div>
-          </article>`;
-    }
-  }
+
+for (let i = 0; i < speakersName.length; i += 1) {
+  speakersName[i].innerHTML = speakersInfo[i].name;
+  speakersCountry[i].innerHTML = speakersInfo[i].country;
+  speakersDescription[i].innerHTML = speakersInfo[i].description;
+  speakersBgImage[i].src = speakersInfo[i].bgImage;
+  speakersImage[i].src = speakersInfo[i].image;
 }
-window.addEventListener('load', spks);
-window.addEventListener('resize', spks);
+
+const mobileMenu = document.querySelector('.mobile-menu');
+
+document.querySelector('intro-part').addEventListener('click', (e) => {
+  if (e.target.classList[0] === 'mobile' || e.target.classList[0] === 'lines') {
+    mobileMenu.classList.add('mobile-menu-appear');
+  }
+});
+
+mobileMenu.addEventListener('click', (e) => {
+  if (e.target.classList[0] === 'mobile-menu-disappear-btn') {
+    mobileMenu.classList.remove('mobile-menu-appear');
+  }
+});

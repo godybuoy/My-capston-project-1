@@ -18,7 +18,7 @@
   <body class="homepage">
     <header class="navbar" id="navbar"> 
       <div class="intro-part">
-        <button class="mobile" id="mobile" onclick="openMolileMenu(mobile)">
+        <button class="mobile" id="mobile">
           <img class="m-menu" src="./image/mobile_menu.png" alt="menu icon">
         </button>
         </div>
@@ -58,25 +58,25 @@
             </nav>
           </div>
         </div>
-      </div> 
-      <nav class="navmobile" id="navmobile">
-        <div class="btn-wrapper">
-            <button class="close-btn" onclick="closeMobileMenu()">
-              <img src="./image/close_mobile_menu.png" alt="close button">
-            </button>
-        </div>
-        <div class="logo" onclick="closeMobileMenu()">
-          <a href="index.html"><img class = "logo-img mobilelog" src="./image/mylogo.png" alt="the royal dev logo"/></a>
-        </div>
-        <ul class="navigation-item" id="topnav">
-          <li class="nav-mobile" onclick="closeMobileMenu()"><a class="mobile-item" href="about.html">About</a></li>
-          <li class="nav-mobile" onclick="closeMobileMenu()"><a class="mobile-item" href="#Program">Program</a></li>
-          <li class="nav-mobile" onclick="closeMobileMenu()"><a class="mobile-item" href="#Join">Join</a></li>
-          <li class="nav-mobile" onclick="closeMobileMenu()"><a class="mobile-item" href="#Sponsor">Sponsor</a></li>
-          <li class="nav-mobile" onclick="closeMobileMenu()"><a class="mobile-item" href="#News">News</a></li>
+        <ul class="mobile-menu">
+          <li>
+            <button type="button" class="mobile-menu-disappear-btn">X</button>
+          </li>
+          <li>
+            <a href="#About" class="menu-about menu-span">About</a>
+          </li>
+          <li>
+            <a href="#Program" class="menu-teams menu-span">Program</a>
+          </li>
+          <li>
+            <a href="#Join" class="menu-players menu-span">Join</a>
+          </li>
+          <li>
+            <a href="#Sponser" class="menu-latestnews menu-span">Sponser</a>
+          </li>
         </ul>
-        <button class="nav-works nav-mobile" onclick="closeMobileMenu()"> @TRIC</button>
       </nav>
+      </div> 
       <div class="row icontent">
         <div class="row itittle">
           <h1 class="row introd1">"Welcome, student!"</h1>
@@ -158,8 +158,7 @@
               <div class="right-text">
                 <p class="rtext">
                   style sheet language used for describing the presentation 
-                  of a document written in a markup language such as HTML or XML (including XML
-                   dialects such as SVG, MathML or XHTML)
+                  of a document written in a markup language such as HTML.
                 </p>
               </div>
            </article>
@@ -171,30 +170,86 @@
               <div class="right-text">
                 <p class="rtext">
                   Business Intelligence and Analytics· Employee Call-Off Hotline· 
-                  Artificial Intelligence· Cognitive Insights· Automation· Cognitive Engagement.
+                  Artificial Intelligence· Cognitive Insights· Automation·
                 </p>
               </div>
             </article>
           </div>
-          <button class="join">WEB DEVELOPMENT PROJECT COURSE LiveWorx 2023</button>
+          <button class="join">WEB DEVELOPMENT PROJECT COURSE</button>
           <a class="see-link" href="#">SEE THE WHOLE PROGRAM</a>
         </div>
       </section>
       <!-- ....speakers-- -->
-      <section class="spekers col" id="speakers">
-        <br>
-        <br>
-        <div class="p-heading speakertitle">
-          <h3 class="speaktext">Featured Speakers</h3>
-          <div class="line-orange"></div>
-          <hr class="line" />
-        </div>
-        <div class="spks-container" id="spks-container"></div>
-        <button id="m-button" class="m-button">MORE
-          <img class="arrow" src="./image/arrow_down.png" alt="arro down">
-        </button>
-      </section>
+      <section class="speakers-container">
+        <h2 class="speakers-header">Featured Speakers</h2>
+        <hr />
+        <div class="speakers-info-container">
+          <ul class="speakers-container-for-desktop">
+            <li class="speakers-info-divs">
+              <img class="img-transparent-bkgrnd" src="" alt="background img">
+              <img class="speakers-images" src="" alt=" speaker1 image" />
+              <div class="speaker-details">
+                <h3 class="speakers-name"></h3>
+                <span class="speakers-country"></span>
+                <p class="speakers-description"></p>
+              </div>
+            </li>
+            <ul class="speakers-container-for-desktop">
+              <li class="speakers-info-divs">
+                <img class="img-transparent-bkgrnd" src="" alt="background img">
+                <img class="speakers-images" src="" alt=" hardik image" />
+                <div class="speaker-details">
+                  <h3 class="speakers-name"></h3>
+                  <span class="speakers-country"></span>
+                  <p class="speakers-description"></p>
+                </div>
+              </li>
+              <button onclick="readmore()" class="morebtn" id="moreBtn">More <img src="image/arrow_down.png" alt=" arrow down image"></button>
+              <div class="speaker-btn" id="speaker-btn">
+                <ul class="speakers-container-for-desktop">
+                  <li class="speakers-info-divs">
+                    <img class="img-transparent-bkgrnd" src="" alt="background img">
+                    <img class="speakers-images" src="" alt=" hardik image" />
+                    <div class="speaker-details">
+                      <h3 class="speakers-name"></h3>
+                      <span class="speakers-country"></span>
+                      <p class="speakers-description"></p>
+                    </div>
+                  </li>
+                  <ul class="speakers-container-for-desktop">
+                    <li class="speakers-info-divs">
+                      <img class="img-transparent-bkgrnd" src="" alt="background img">
+                      <img class="speakers-images" src="" alt=" hardik image" />
+                      <div class="speaker-details">
+                        <h3 class="speakers-name"></h3>
+                        <span class="speakers-country"></span>
+                        <p class="speakers-description"></p>
+                      </div>
+                    </li>
+                    <ul class="speakers-container-for-desktop">
+                      <li class="speakers-info-divs">
+                        <img class="img-transparent-bkgrnd" src="" alt="background img">
+                        <img class="speakers-images" src="" alt=" hardik image" />
+                        <div class="speaker-details">
+                          <h3 class="speakers-name"></h3>
+                          <span class="speakers-country"></span>
+                          <p class="speakers-description"></p>
+                        </div>
+                      </li>
+                      <ul class="speakers-container-for-desktop">
+                        <li class="speakers-info-divs">
+                          <img class="img-transparent-bkgrnd" src="" alt="background img">
+                          <img class="speakers-images" src="" alt=" hardik image" />
+                          <div class="speaker-details">
+                            <h3 class="speakers-name"></h3>
+                            <span class="speakers-country"></span>
+                            <p class="speakers-description"></p>
+                          </div>
+                        </li>
+              </div>
 
+        </div>
+      </section>
       <!--patners-->
       <section class="partners">
         <div class="pro-heading">
@@ -204,16 +259,7 @@
         </div>
         <div class="parner-container">
           <div class="pimage">
-            <img src="./image/code-alarm-1.svg" alt="code icon" />
-          </div>
-          <div class="pimage">
-            <img src="./image/code-school.svg" alt="codesch icon" />
-          </div>
-          <div class="pimage">
             <img src="./image/visual-studio-code-1.svg" alt="vs icon" />
-          </div>
-          <div class="pimage">
-            <img src="./image/googleimage.jpg" alt="google icon" /></li>
           </div>
           <div class="pimage">
             <img src="./image/Microsoft-Logo.svg" alt="microsoft icon" /></li>
