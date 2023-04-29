@@ -29,7 +29,7 @@ const speakersInfo = [
   {
     name: 'Babar Azam',
     country: 'Nairobi, Kenya',
-    description: 'Best in C+ . A qualified staff member deals with math',
+    description: 'Best in C+ .qualified  with math',
     bgImage: 'image/speaker-back.png',
     image: 'image/speaker5.jpg',
   },
@@ -43,7 +43,7 @@ const speakersInfo = [
   {
     name: 'Nathaniel kivu',
     country: 'Levu, Ethiopia',
-    description: 'Best in C . Staff member. With 5 years of  Html and css.',
+    description: 'Best in C . Staff member. Html and css.',
     bgImage: 'image/speaker-back.png',
     image: 'image/speaker5.jpg',
   },
@@ -57,7 +57,7 @@ const speakersInfo = [
   {
     name: 'John Miracle',
     country: 'Washington America',
-    description: 'Best in python language . with 12 years of experience',
+    description: 'Best in python language experience',
     bgImage: 'image/speaker-back.png',
     image: 'image/wanindu.webp',
   },
