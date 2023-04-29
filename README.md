@@ -13,7 +13,6 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -23,8 +22,16 @@
 
 <!-- PROJECT DESCRIPTION -->
 
+<<<<<<< HEAD
 # 📖 [Web-development-Project] <a name="about-project"></a>
 is a project of making a portfolio website to showcase 
+=======
+# 📖 [My-capston-project-1] <a name="about-project"></a>
+
+
+
+**[My-capston-project-1]** is a project of making a portfolio website to showcase 
+>>>>>>> f827661e4877ba4d07bbf6693780d4080e4722b7
 my skills to  employers that i can make a responsive website using html, css, Javascript and Bootstrap.
 
 
@@ -66,7 +73,7 @@ This project has been made using html, css, javascript and bootstrap according t
 
 <!-- Note: Right now Application hasn't been Deployed yet. In future if this will be deployed,
 Deployed Link will update here -->
-- [Live Demo Link]  <a href="https://godybuoy.github.io/Web-development-Project/"><button type="button" color:red background: white>Visit Site</button></a>
+- [Live Demo Link]  <a href="https://godybuoy.github.io/My-capston-project-1/"><button type="button" color:red background: white>Visit Site</button></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +104,8 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/godybuoy/web-development-project.git
+  git clone https://github.com/godybuoy/My-capston-project-1
+
 ```
 
 
@@ -125,19 +133,9 @@ To run tests, run the following command:
 In order to run for linter errors, you will have to create a pull request
 --->
 
-### Deployment
-
-You can deploy this project using:
-
-
---> By purchasing domain and hosting
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- AUTHOR -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Author <a name="Godfrey Nyabuti"></a>
 
 
 
