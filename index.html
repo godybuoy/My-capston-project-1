@@ -48,7 +48,7 @@
             </div>
             <nav class="navigation">
               <ul class="navigation-item">
-                <li class="nav-item"><a class="sub-item abot" href="about.html">About</a></li>
+                <li class="nav-item"><a class="sub-item abot" href="/About.html">About</a></li>
                 <li class="nav-item"><a class="sub-item" href="#Program">Program</a></li>
                 <li class="nav-item"><a class="sub-item" href="#Join">Join</a></li>
                 <li class="nav-item"><a class="sub-item" href="#Sponsor">Sponsor</a></li>
@@ -58,12 +58,12 @@
             </nav>
           </div>
         </div>
-        <ul class="mobile-menu">
+        <ul class="mobile-menu" id="dh">
           <li>
-            <button type="button" class="mobile-menu-disappear-btn">X</button>
+            <button type="button" class="mobile-menu-disappear-btn" id="close">X</button>
           </li>
           <li>
-            <a href="#About" class="menu-about menu-span">About</a>
+            <a href="../About.html" class="menu-about menu-span">About</a>
           </li>
           <li>
             <a href="#Program" class="menu-teams menu-span">Program</a>
@@ -103,12 +103,12 @@
 
     <main class="main">
       <!--Main Program -->
-      <section class="program">
+      <section class="program" id="Program">
         <div class="programi">
           <div class="main-heading">
             <h3 class="main-text">Main Program</h3>
             <div class="line-orange"></div>
-            <hr class="line" />
+            <hr  />
           </div>
           <div class="card">
             <article class="card-container">
@@ -175,7 +175,7 @@
               </div>
             </article>
           </div>
-          <button class="join">WEB DEVELOPMENT PROJECT COURSE</button>
+          <button class="join" id="Join">WEB DEVELOPMENT PROJECT COURSE</button>
           <a class="see-link" href="#">SEE THE WHOLE PROGRAM</a>
         </div>
       </section>
@@ -205,7 +205,7 @@
                 </div>
               </li>
             </ul>
-            <ul class="speakers-container-for-desktop display-none">
+            <ul class="speakers-container-for-desktop display-none" id="more">
               <li class="speakers-info-divs">
                 <img class="img-transparent-bkgrnd" src="" alt="background img">
                 <img class="speakers-images" src="" alt=" hardik image" />
@@ -225,7 +225,7 @@
                 </div>
               </li>
             </ul>
-            <ul class="speakers-container-for-desktop display-none">
+            <ul class="speakers-container-for-desktop display-none" id="more">
               <li class="speakers-info-divs">
                 <img class="img-transparent-bkgrnd" src="" alt="background img">
                 <img class="speakers-images" src="" alt=" hardik image" />
@@ -245,7 +245,7 @@
                 </div>
               </li>
             </ul>
-               <button class="morebtn" id="moreBtn">More <img src="image/arrow_down.png" alt=" arrow down image"></button>
+               <button class="morebtn" id="moreBtn">Show More</button>
               <!-- <div class="speaker-btn" id="speaker-btn">
                 
               </div> -->
@@ -257,7 +257,7 @@
         <div class="pro-heading">
           <h3 class="pro-text patnerinfo">Partner</h3>
           <div class="line-orange"></div>
-          <hr class="line" />
+          <hr/>
         </div>
         <div class="parner-container">
           <div class="pimage">
@@ -282,6 +282,6 @@
         </p>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>
