@@ -23,11 +23,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Web-development-Project] <a name="about-project"></a>
+# 📖 [My capston project] <a name="about-project"></a>
 
 
 
-**[Web-development-Project]** is a project of making a portfolio website to showcase 
+**[my capston project-1]** is a project of making a portfolio website to showcase 
 my skills to  employers that i can make a responsive website using html, css, Javascript and Bootstrap.
 
 
@@ -69,7 +69,7 @@ This project has been made using html, css, javascript and bootstrap according t
 
 <!-- Note: Right now Application hasn't been Deployed yet. In future if this will be deployed,
 Deployed Link will update here -->
-- [Live Demo Link]  <a href="https://godybuoy.github.io/Web-development-Project/"><button type="button" color:red background: white>Visit Site</button></a>
+- [Live Demo Link]  <a href="https://godybuoy.github.io/My-capston-project-1/"><button type="button" color:red background: white>Visit Site</button></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +100,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/godybuoy/web-development-project.git
+  git clone https://github.com/godybuoy/My-capston-project-1.git
 ```
 
 
