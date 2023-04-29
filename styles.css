@@ -2,11 +2,13 @@
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
 
 * {
+  transition: 0.5s;
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: #272a31;
+  list-style: none;
 }
 
 body {
@@ -95,13 +97,14 @@ hr {
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
   border: 2px solid rgba(255, 255, 255, 0.78);
   z-index: 2;
   position: fixed;
+  left: 100%;
   background-color: rgb(235, 241, 239);
 }
 
@@ -158,6 +161,12 @@ hr {
 
 .footer-image {
   display: none;
+}
+
+.footerimage {
+  display: flex;
+  height: 30px;
+  padding-top: 3px;
 }
 
 .row.itittle {
@@ -228,6 +237,10 @@ hr {
   color: #d3d3d3;
 }
 
+.about-text {
+  color: #070707;
+}
+
 .program {
   display: flex;
   flex-direction: column;
@@ -235,6 +248,14 @@ hr {
   background-image: url(./image/diamond.png);
   background-repeat: repeat;
   background-color: rgb(40, 41, 49);
+}
+
+.about-program {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .programi {
@@ -247,6 +268,30 @@ hr {
   width: 100%;
   padding-top: 60px;
   overflow: auto;
+}
+
+.about-pro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.about-container {
+  width: 100%;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-dev-logo {
+  margin: 2vh 0 2vh 0;
+  width: 30%;
+  border: 1px solid black;
 }
 
 .p-heading {
@@ -281,7 +326,8 @@ hr {
   vertical-align: middle;
   overflow: auto;
   word-break: break-all;
-  overflow: hidden;
+
+  /* overflow: unset; */
 }
 
 .card-container:hover {
@@ -289,6 +335,10 @@ hr {
 }
 
 .see-link {
+  display: none;
+}
+
+.see-linkd {
   display: none;
 }
 
@@ -343,6 +393,15 @@ img.logo-img {
   padding: 0 0.5em 0 0;
 }
 
+.celebration-images {
+  display: flex;
+  float: left;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  padding: 5em;
+}
+
 .speakers-container {
   display: flex;
   align-items: center;
@@ -357,12 +416,13 @@ img.logo-img {
 
 .speakers-info-container {
   display: flex;
-
-  /* align-items: center; */
+  align-items: center;
   flex-direction: column;
   width: 90%;
+}
 
-  /* text-decoration: none; */
+li.speakers-info-divs {
+  display: flex;
 }
 
 .speaker-info-divs {
@@ -442,6 +502,23 @@ img.logo-img {
   background-color: rgb(34, 34, 34);
 }
 
+.sponsortext {
+  display: flex;
+  font-size: 24px;
+  margin-top: 3vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #d3d3d3;
+}
+
+.pro-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .partners {
   display: none;
   align-items: center;
@@ -450,12 +527,39 @@ img.logo-img {
   width: 100%;
 }
 
-.footer-container {
-  display: none;
+.parner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sponsors-main {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(34, 34, 34);
+  width: 100%;
+}
+
+img.partner-image {
+  width: 32px;
+  display: flex;
+}
+
+.footercontainer {
+  display: flex;
 }
 
 .footertext p {
   color: #fff;
+}
+
+.footer-text p {
+  color: #1c1a1a;
+  display: flex;
+}
+
+.footertext {
+  display: flex;
 }
 
 .display-none {
@@ -491,6 +595,26 @@ img.logo-img {
 
   .programi {
     width: 100%;
+  }
+
+  .about-pro {
+    width: 100%;
+  }
+
+  .about-program {
+    width: 100%;
+  }
+
+  .info-about-logo {
+    font-size: 20px;
+  }
+
+  ul.celebration-imagesz {
+    display: flex;
+  }
+
+  .text-summary {
+    width: 70%;
   }
 
   .card {
@@ -540,7 +664,7 @@ img.logo-img {
 
   .toplist {
     display: flex;
-    width: 30%;
+    width: 35%;
     position: static;
     gap: 20px;
     padding: 0;
@@ -555,6 +679,14 @@ img.logo-img {
   .navimg {
     width: 15px;
     height: 15px;
+  }
+
+  .row.itittle {
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 15vh;
+    margin-left: 60px;
   }
 
   .row.icontent {
@@ -579,10 +711,11 @@ img.logo-img {
   .navdesktop {
     display: flex;
     text-align: center;
-    width: 100%;
+    width: 95%;
     align-items: center;
     justify-content: space-between;
-    margin: 5px 0 0 20px;
+
+    /* margin: 5px 0 0 20px; */
     padding-right: 160px;
   }
 
@@ -625,6 +758,9 @@ img.logo-img {
   .intro {
     font-size: 15px;
     margin: 20px;
+
+    /* justify-content: center; */
+    padding: 0 7px;
   }
 
   .underline-orange {
@@ -638,6 +774,16 @@ img.logo-img {
     font-size: 30px;
   }
 
+  .about-text {
+    font-size: 30px;
+  }
+
+  .web-dev-logo {
+    margin: 0 2vh 0;
+    width: 30vh;
+    border: 2px solid black;
+  }
+
   .see-link {
     display: flex;
     justify-content: center;
@@ -648,13 +794,37 @@ img.logo-img {
     text-decoration-line: underline;
   }
 
-  .speakers-container-for-desktop {
+  .see-linkd {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1b1717;
+    margin: 7vh;
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+
+  .see-linkd:hover {
+    padding: 2px;
+    background-color: #f53924;
+    letter-spacing: 5px;
+  }
+
+  .speakers-container-for-desktop {
+    display: grid;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .speakers-info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 78%;
   }
 
   .morebtn {
@@ -695,11 +865,31 @@ img.logo-img {
     color: #d3d3d3;
   }
 
+  .sponsortext {
+    font-size: x-large;
+    font-weight: 500 !important;
+    font-family: "Poppins", sans-serif;
+    color: #d3d3d3;
+  }
+
   .partners {
     background-color: rgb(39, 42, 50);
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+
+  .sponsors-main {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    display: flex;
+  }
+
+  img.partner-image {
+    width: 32px;
+    display: flex;
   }
 
   .patimage {
@@ -719,6 +909,18 @@ img.logo-img {
     width: 40px;
   }
 
+  .footerimage {
+    display: flex;
+    height: 35px;
+    padding-top: 3px;
+  }
+
+  .footer-image {
+    display: flex;
+    height: 35px;
+    padding-top: 3px;
+  }
+
   .parner-container {
     display: flex;
     justify-content: space-around;
@@ -726,6 +928,10 @@ img.logo-img {
     flex-direction: row;
     width: 100%;
     height: 40px;
+  }
+
+  .footertext {
+    display: flex;
   }
 
   .footertext p {
