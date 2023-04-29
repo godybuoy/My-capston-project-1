@@ -104,7 +104,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/godybuoy/My-capston-project-1
+  git clone https://github.com/godybuoy/My-capston-project-1.git
 
 ```
 
